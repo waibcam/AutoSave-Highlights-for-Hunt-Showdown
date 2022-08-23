@@ -20,12 +20,12 @@ These instructions will get you a copy of the powerShell script and explain you 
 
 #### 1. Download the script
 
-First you need to download the ps1 scrit into your PC.
-Latest version can be found [here](https://raw.githubusercontent.com/waibcam/AutoSave-Highlights-for-Hunt-Showdown/main/AutoSaveHighlights.ps1).  
-Simply right-click on it and save it where you want.
+First you need to download the ps1 script into your PC.
+Latest version can be found [here](https://github.com/waibcam/AutoSave-Highlights-for-Hunt-Showdown/releases/tag/v0.1).  
+Download the zip file and extract it wher you want.
 
 #### 2. Configuration
-Then, you'll have to edit (any simple text editor will work fine) and set (at the beginning that the script) 3 folders:
+Then, you'll have to edit (any simple text editor will work fine) and set (at the beginning that the script) 3 folders path:
 ```
 - $TempHighlightsPath = "C:\ADD\YOUR\PATH\TO\Temp Highlights" # <-- Configure this
 - $DestinationPath = "C:\CONFIGURE\YOUR\DESTINATION\PATH" # <-- Configure this
@@ -38,14 +38,14 @@ ALT + Z -> Highlights -> Path of the folder "Temporary files".
 ![Highlights Folder](https://i.imgur.com/xjpMVci.png)  
 
 $DestinationPath is the path wher you want to script to save your highlights (this path will be created if it doesn't exsist).  
-$SteamPath is the path of your Steam.exe folder so the script cna run Hunt Showdown.  
+$SteamPath is the path of your Steam.exe folder so the script can run Hunt Showdown when started.  
 
 #### 3. Run the script with PowerShell
 To start the script, right click on the file and select "Run with PowerShell". It is simple as that!
 
-That said, if the window closes automatically it is because, by default, the **PowerShell Execution policy** is set to *Restricted*. This means that PowerShell scripts won’t run at all.  
+That said, if the window closes automatically it is because, by default, the **PowerShell Execution policy** is set to *Restricted*. This means that any PowerShell script won’t run at all.  
   
-To fix it:
+To fix that:
 ```
   1. Press Windows key + X (or right click on the start menu)  
   2. Choose Windows PowerShell (admin)  
