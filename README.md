@@ -22,7 +22,7 @@ These instructions will get you a copy of the powerShell script and explain you 
 
 First you need to download the ps1 scrit into your PC.
 Latest version can be found [here](https://raw.githubusercontent.com/waibcam/AutoSave-Highlights-for-Hunt-Showdown/main/AutoSaveHighlights.ps1).  
-Simply right-click on save it where you want
+Simply right-click on it and save it where you want.
 
 #### 2. Configuration
 Then, you'll have to edit (any simple text editor will work fine) and set (at the beginning that the script) 3 folders:
