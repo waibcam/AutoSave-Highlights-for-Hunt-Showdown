@@ -143,12 +143,8 @@ function Invoke-MoveCreatedFile
 	foreach ($File_To_Move in $Files_To_Move){
 		$FileName = $File_To_Move.Name
 		$FileCreationTime = $File_To_Move.CreationTime
-
-		$year = Get-Date -Date $FileCreationTime -Format "yyyy"
-		$month = Get-Date -Date $FileCreationTime -Format "MM"
-		$day = Get-Date -Date $FileCreationTime -Format "dd"
 		
-		$FullDestinationPath = "$DestinationPath\$GameName\$year\$month\$day"
+		$FullDestinationPath = "$DestinationPath"
 		
 		if ((Test-Path -Path $FullDestinationPath) -eq $false) {
 			#Create directory if not exists
@@ -167,7 +163,7 @@ function Invoke-MoveCreatedFile
 			}
 		}
 		else {
-			Write-Host "`tFolder $GameName\$year\$month\$day doesn't exist or can't be created" -ForegroundColor Red
+			Write-Host "`tFolder $GameName doesn't exist or can't be created" -ForegroundColor Red
 			Write-Host "`tFile hasn't been moved." -ForegroundColor Red
 		}
 	}
